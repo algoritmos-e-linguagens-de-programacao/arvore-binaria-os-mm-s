@@ -1,12 +1,11 @@
 class Node:
 
-  def __init__(self, value, direita=None, esquerda=None):
-    self.value = value
-    self.direita = direita
-    self.esquerda = esquerda
+  def __init__(self, data, right=None, left=None):
+    self.data = data
+    self.right = right
+    self.left = left
 
-  def setDireita(self, direita):
-    self.direita = direita
+  def __str__(self):
+    return str(self.data)
 
-  def setEsquerda(self, esquerda):
-    self.esquerda = esquerda
+
